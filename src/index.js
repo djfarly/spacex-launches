@@ -1,6 +1,6 @@
-import { getPokemonList } from './api.js';
-import { getPokedexHtml } from './pokedex.js';
+import { getLaunchesList } from './api.js';
+import { getLaunchesHtml } from './launches.js';
 import { render } from './render.js';
 
-const pokemonList = await getPokemonList({ limit: 20 });
-render(getPokedexHtml({ pokemonList }));
+const launchesList = await getLaunchesList({ limit: 20 });
+render(getLaunchesHtml({ launchesList }));

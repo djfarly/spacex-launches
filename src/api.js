@@ -1,8 +1,5 @@
-export const getPokemonList = async ({ limit = 20 } = {}) => {
-  // TODO: fetch pokemon list
-  return [];
-};
-
-export const getPokemon = async ({ name } = {}) => {
-  // TODO: fetch pokemon by name
+export const getLaunchesList = async () => {
+  const response = await fetch('https://api.spacexdata.com/v5/launches');
+  const data = await response.json();
+  return data;
 };
